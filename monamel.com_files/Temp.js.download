@@ -33,12 +33,12 @@ function blockCompleteCallback() {
     };
 
     var mobile = $(window).width();
-
+/*FERHAT*/
     if (mobile < 768) {
 
-        $('.searchContent').moveDiv({ target: 'body', prependTo: true });
+        /*$('.searchContent').moveDiv({ target: 'body', prependTo: true });
 
-        $('.CartProduct').moveDiv({ target: 'body', prependTo: true });
+        $('.CartProduct').moveDiv({ target: 'body', prependTo: true });*/
 
 
         setTimeout(function () {
@@ -297,6 +297,15 @@ function urunListCallback() {
 }
 
 $(document).ready(function () {
+
+/*FERHAT*/    
+    var mobile = $(window).width();
+
+    if (mobile < 768) {
+
+        $('.searchContent').moveDiv({ target: 'body', prependTo: true });
+
+        $('.CartProduct').moveDiv({ target: 'body', prependTo: true });}
 
     $('body').prepend('<div id="overlay"></div>');
 

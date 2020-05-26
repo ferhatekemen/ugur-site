@@ -2011,8 +2011,8 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
 
 /*Sepet*/
 .mycart { float: right; position: absolute; right: 0; top: 48px; }
-.mycart > a { display: block; color: #fff; text-align: left; }
-.mycart > a:before { display: block; content: ""; float: left; width: 23px; height: 23px; background: url('images/sepetim.png')no-repeat center center; margin-right: 10px; }
+.mycart > a { display: block; color: #000; text-align: left; }
+.mycart > a:before { display: block; content: ""; float: left; width: 23px; height: 23px; background: url(images/divustSepetteUrunYok.png)/*images/sepetim.png*/ no-repeat center center; margin-right: 10px; }
 .mycart .sepetTecxt { display: inline-block; font-size: 15px; margin-top: 4px; font-weight: 600; }
 .mycart .sepetTecxt .fa { display: none; }
 .mycart .sepetUrun { display: none; }
@@ -2317,6 +2317,9 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
     #btnKelimeAra { display: none; }
 
 /*Ferhat*/
+
+    #ticimaxCopyright { display: inline-block; margin: 0 !important; line-height: 45px !important; padding-bottom:40px }
+
     #header { background-color: #3b3b3b; position: relative; height: 65px; border-bottom: /*1px solid #d9d9d9*/; width: 100%; border-top: none; }
 
     #ferhat {display:block; width:100%; background:linear-gradient(/*#ec95a3*/#fff, #fff); position:fixed; bottom:0; z-index:4; margin:0; padding:0; height:40px}
@@ -2640,7 +2643,7 @@ div.favicon a, div.favicon a i, .mycart > a, .mycart > a > i {
     color:#3b3b3b;
 }
 
-.mycart .sepetTecxt .fa {
+.mycart {
     color:#3b3b3b;
 }   
 
