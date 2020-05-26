@@ -1,0 +1,103 @@
+﻿$(document).ready(function () {
+    $('.anasayfa_tek_slider.owl-carousel').each(function () {
+        var ayarStr = $(this).parents("section").attr("data-ayar") ? $(this).parents("section").attr("data-ayar").replace(/'/g, '"') : undefined;
+        var ayar = {
+            items: 1,
+            autoplay: true,
+            loop: false,
+            autoplayTimeout: 4000,
+            stagePadding: 0,
+            margin: 0
+        };
+        try {
+            if (ayarStr) {
+                ayar = JSON.parse(ayarStr);
+            }
+        } catch (e) {
+
+        }
+        $(this).owlCarousel({
+            nav: true,
+            dots: true,
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true,
+            autoplay: ayar.autoplay,
+            loop: ayar.loop,
+            autoplayTimeout: ayar.autoplayTimeout,
+            margin: ayar.margin,
+            responsive: { 0: { items: 1, margin: 5, stagePadding: ayar.stagePadding, }, 768: { items: 1 }, 1041: { items: 1, nav: true } },
+            navClass: ['ProductListprev', 'ProductListnext'],
+            autoplaySpeed: 800,
+            autoplayHoverPause: true,
+            rewind: true
+        });
+    });
+
+    $('#ticimaxYanBlok .ulUrunSlider').each(function () {
+        var ayarStr = $(this).parents("section").attr("data-ayar") ? $(this).parents("section").attr("data-ayar").replace(/'/g, '"') : undefined;
+        var ayar = ayarStr ? JSON.parse(ayarStr) : {
+            autoplay: true,
+            loop: false,
+            autoplayTimeout: 3000,
+            margin: 0,
+            itemCount: 1
+        };
+        $(this).owlCarousel({
+            autoplay: ayar.autoplay,
+            loop: ayar.loop,
+            autoplayTimeout: ayar.autoplayTimeout,
+            navClass: ['ProductListprev', 'ProductListnext'],
+            autoplaySpeed: 800,
+            autoplayHoverPause: true,
+            margin: ayar.margin,
+            dots: false,
+            nav: true,
+            responsive: { 0: { items: 2, margin: 5 }, 768: { items: 1 }, 1041: { items: ayar.itemCount } }
+        });
+    });
+
+    $('.ulUrunSlider').each(function () {
+        var ayarStr = $(this).parents("section").attr("data-ayar") ? $(this).parents("section").attr("data-ayar").replace(/'/g, '"') : undefined;
+        var ayar = ayarStr ? JSON.parse(ayarStr) : {
+            autoplay: true,
+            loop: false,
+            autoplayTimeout: 3000,
+            margin: 0,
+            itemCount: 4
+        };
+        $(this).owlCarousel({
+            autoplay: ayar.autoplay,
+            loop: ayar.loop,
+            autoplayTimeout: ayar.autoplayTimeout,
+            navClass: ['ProductListprev', 'ProductListnext'],
+            autoplaySpeed: 800,
+            autoplayHoverPause: true,
+            margin: ayar.margin,
+            dots: false,
+            nav: true,
+            responsive: { 0: { items: 2, margin: 5 }, 768: { items: 3 }, 1041: { items: ayar.itemCount } }
+        });
+    });
+
+    $("section").each(function () {
+        var section = $(this);
+        section.find('.ticimaxAnasayfaTab').first().addClass('active');
+        section.find('.ticimaxTabHead li').click(function (event) {
+            event.preventDefault();
+            section.find('.ticimaxTabHead li').removeClass('ticimaxTabHead_active');
+            $(this).addClass('ticimaxTabHead_active');
+            var secili = $(this).index();
+            section.find('.ticimaxAnasayfaTab').removeClass('active');
+            section.find('.ticimaxAnasayfaTab').eq(secili).addClass('active');
+            loadTicimaxLazyLoad();
+        });
+
+    });
+
+    getProductPricesOnPage();
+
+    setTimeout(function () {
+        loadTicimaxLazyLoad();
+    }, 500);
+});
