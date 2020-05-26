@@ -1912,7 +1912,7 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
 /* ================================================ */
 
 
-#header { clear: both; text-align: center; background-color: #fff; border-top: 35px solid #2b2b2b; background: #3b3b3b;; }
+#header { clear: both; text-align: center; background-color: #fff; border-top: 35px solid #2b2b2b; background: #3b3b3b; }
 #header:before, #header:after { content: " "; display: table; }
 #header:after { clear: both; }
 .homeHeader { margin-bottom: 19px; }
@@ -1960,6 +1960,10 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
 .favicon { position: absolute; right: 130px; top: 46px; }
 .favicon a { color: #fff; font-size: 15px; font-weight: 600; line-height: 30px; }
 .favicon a i { color: #fff; font-size: 24px; margin-right: 9px; float: left; }
+/*FERHAT*/
+.favicon2 { display:flex; align-items:center; justify-content:center; padding:0; margin:0; position: fixed; left: 46vw; bottom: 8px; z-index:5; width: 8vw; }
+/*.favicon2 a { color: #000; font-size: 15px; font-weight: 600; line-height: 30px; }*/
+.favicon2 a i {color:#000; font-size:24px; display:flex; justify-content: center; align-items: center;font-weight: 600; }*/
 
 .SliderYan { float: left; width: 293px; margin: 0; }
 .SliderYan > div { margin-bottom: 20px; float: left; }
@@ -2312,26 +2316,41 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
 
     #btnKelimeAra { display: none; }
 
-    #header { background-color: #3b3b3b; position: relative; height: 65px; border-bottom: 1px solid #d9d9d9; width: 100%; border-top: none; }
+/*Ferhat*/
+    #header { background-color: #3b3b3b; position: relative; height: 65px; border-bottom: /*1px solid #d9d9d9*/; width: 100%; border-top: none; }
 
+    #ferhat {display:block; width:100%; background:linear-gradient(/*#ec95a3*/#fff, #fff); position:fixed; bottom:0; z-index:4; margin:0; padding:0; height:40px}
+    
     #header #logo { width: 40%; margin: 0 auto !important; display: table !important; text-align: center; float: none; padding: 0; }
 
     #header #logo a { display: table-cell; vertical-align: middle; text-align: center !important; height: 65px; margin: 0 auto; }
 
     #header #logo img { max-width: 100%; max-height: 60px; display: inline; }
 
+    /*Ferhat*/
+
+    .MobilUserBtn { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:8vw; position: fixed; right: 10vw; bottom: 8px; z-index:5; }
+
+    .MobilCartBtn { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:8vw; position: fixed; right: 28vw; bottom: 8px; z-index:5; }
+
+    .MobilSearchBtn { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:8vw; position: fixed; left: 28vw; bottom: 8px; z-index:5;}
+    .homeButton { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:8vw; position: fixed; left: 10vw; bottom: 8px; z-index:5;}
+
+    .MobilMenuBtn { position: absolute; left: 8px; top: 16px; }
+    
+    /*original code
     .MobilUserBtn { position: absolute; right: 48px; top: 16px; }
 
     .MobilCartBtn { position: absolute; right: 8px; top: 16px; }
 
     .MobilSearchBtn { position: absolute; left: 48px; top: 16px; }
 
-    .MobilMenuBtn { position: absolute; left: 8px; top: 16px; }
+    .MobilMenuBtn { position: absolute; left: 8px; top: 16px; }*/
 
     .MobilUserBtn i,
     .MobilCartBtn i,
     .MobilSearchBtn i,
-    .MobilMenuBtn i { font-size: 26px; color: #fff; }
+    .MobilMenuBtn i, .homeButton i { font-size: 24px; color: #fff; }
 
     .mobileNav { line-height: 30px; text-align: left; display: block; font-size: 15px; color: #9b9b9b; }
 
@@ -2403,7 +2422,9 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
     .Linkmenu ul li a { color: #9b9b9b; font-size: 13px; border-bottom: 1px solid rgba(0, 0, 0, 0.15); width: 100%; font-weight: normal; line-height: normal; padding: .96em; }
 
     .hText { display: none; }
-    .favicon { display: none; }
+/*Ferhat*/
+
+    .favicon { display:none;}
     .SliderYan { width: 100%; }
     .SliderYan img { width: 100%; }
     .SliderYan > div { margin-bottom: 10px; padding: 0; }
@@ -2441,6 +2462,8 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
     .MobilCartBtn { display: none; }
     .MobilSearchBtn { display: none; }
     .MobilMenuBtn { display: none; }
+/*FERHAT*/
+#ferhat, .favicon2, .homeButton {display:none;}
 }
 /*Fiyat Aralığı*/
 .slider-range { width: 85%; margin: 10px 10px 0 17px !important; border-radius: 0; height: 3px !important; background-color: #000 !important; border: 0 !important; }
@@ -2601,4 +2624,31 @@ section.ResimGaleri .Main .Marquee-tag:hover:after { content: ''; position: abso
 
 @media(max-width:767px) {
     .ProductList.sort_4 .ItemOrj.col-xs-6:nth-child(2n+1) { clear: left; }
+}
+
+/*Ferhat's part*/
+
+#header {
+    background:#ffffff; 
+}
+
+.searchContent #txtbxArama {
+    background:#3b3b3b;
+}
+
+div.favicon a, div.favicon a i, .mycart > a, .mycart > a > i {
+    color:#3b3b3b;
+}
+
+.mycart .sepetTecxt .fa {
+    color:#3b3b3b;
+}   
+
+.homeButton i, .MobilUserBtn i, .MobilCartBtn i, .MobilSearchBtn i, .MobilMenuBtn i, div.favicon2 a, div.favicon2 a i {
+    color: /*#3b3b3b*/ #000;
+}
+
+.navigation .HeaderMenu2 > li.ulVar {
+    background-color: #ec95a3;
+    background:#ec95a3;
 }

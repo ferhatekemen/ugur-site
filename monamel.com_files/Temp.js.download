@@ -301,11 +301,15 @@ $(document).ready(function () {
     $('body').prepend('<div id="overlay"></div>');
 
     $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>');
-
+    /*Ferhat*/
+    $("#header").append('<div id="ferhat"></div>');
     $(".headerContent").append('<a class="MobilUserBtn" href="/Hesabim.aspx#/Hesabim-Anasayfa"><i class="fa fa-user"></a>');
     $(".headerContent").append('<a class="MobilCartBtn" href="javascript:;" onclick="sepetEkleConfig.onAfterSepetEkle()"><i class="fa fa-shopping-cart"></a>');
     $(".headerContent").append('<a class="MobilSearchBtn" href="javascript:;"><i class="fa fa-search"></a>');
     $(".headerContent").append('<a class="MobilMenuBtn" href="javascript:;"><i class="fa fa-bars"></a>');
+    /*Ferhat*/
+    $(".headerContent").append('<a class="homeButton" href="https://monamel.com/" target="_self" title="Anasayfa"><i class="fa fa-home"></a>');
+
 
 
     $("body").prepend("<div class='mobilNavigation active'><div class='mobilNavBottom'></div><div id='jqxMenu'><span class='jqxMenuTittle'> " + translateIt("Blog_Kategoriler") + " <i class='fa fa-close'></i></span></div></div>");
@@ -349,6 +353,8 @@ $(document).ready(function () {
     $('.welcome').insertAfter('.hText .pull-right')
     $('.Linkmenu').insertAfter('.HeaderMenu2')
     $('.headerContent').append('<div class="favicon"><a href="/Hesabim.aspx#/Favorilerim"><i class="lnr lnr-heart"></i>Favorilerim</a></div>')
+    /*Ferhat*/
+        $('.headerContent').append('<div class="favicon2"><a href="/Hesabim.aspx#/Favorilerim"><i class="lnr lnr-heart"></i></a></div>')
     //Header Alan
 
     //Content
