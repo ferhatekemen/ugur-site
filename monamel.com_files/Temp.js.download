@@ -311,6 +311,7 @@ $(document).ready(function () {
 
     $('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>');
     /*Ferhat*/
+    $("#header").append('<div id="ferhat2"></div>');
     $("#header").append('<div id="ferhat"></div>');
     $(".headerContent").append('<a class="MobilUserBtn" href="/Hesabim.aspx#/Hesabim-Anasayfa"><i class="fa fa-user"></a>');
     $(".headerContent").append('<a class="MobilCartBtn" href="javascript:;" onclick="sepetEkleConfig.onAfterSepetEkle()"><i class="fa fa-shopping-cart"></a>');
