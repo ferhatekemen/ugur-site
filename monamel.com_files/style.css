@@ -2648,8 +2648,14 @@ div.favicon a, div.favicon a i, .mycart > a, .mycart > a > i {
 .homeButton i, .MobilUserBtn i, .MobilCartBtn i, .MobilSearchBtn i, .MobilMenuBtn i, div.favicon2 a, div.favicon2 a i {
     color: /*#3b3b3b*/ #000;
 }
+.homeButton i:hover, .MobilUserBtn i:hover, .MobilCartBtn i:hover, .MobilSearchBtn i:hover, .MobilMenuBtn i:hover, div.favicon2 a:hover, div.favicon2 a i:hover {
+    color: /*#3b3b3b*/ #ec95a3;
+}
 
-.navigation .HeaderMenu2 > li.ulVar {
-    background-color: #ec95a3;
+.homeButton i:visited, .MobilUserBtn i:visited, .MobilCartBtn i:visited, .MobilSearchBtn i:visited, .MobilMenuBtn i:visited, div.favicon2 a:visited, div.favicon2 a i:visited {
+    color: /*#3b3b3b*/ #ec95a3;
+}
+
+.navigation .HeaderMenu2 > li > a {
     background:#ec95a3;
 }
