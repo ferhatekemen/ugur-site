@@ -1925,9 +1925,12 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
 #lang { padding: 0 0 0 25px !important; }
 #lang span { font-weight: 600; color: #c2c2c2; font-size: 12px; }
 
-#logo { display: inline-block; float: left; padding: 44px 0 39px; }
+#logo { display: inline-block; float:left; padding: 44px 0 5px; }
 #logo a { display: block; }
-#logo a img { max-width: 300px; display: block; }
+#logo a img { max-width: 300px; display: block; margin-top: 40px; }
+#logo p { display: block; }
+#logo p img { max-width: 300px; display: block; margin-top: 40px; }
+
 .uyeGirisUyeAdi { display: none; }
 
 .welcome { float: right; margin-top: 12px; }
@@ -1961,7 +1964,6 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
 .favicon a { color: #fff; font-size: 15px; font-weight: 600; line-height: 30px; }
 .favicon a i { color: #fff; font-size: 24px; margin-right: 9px; float: left; }
 /*FERHAT*/
-.favicon2 { display:flex; align-items:center; justify-content:center; padding:0; margin:0; position: fixed; left: 46vw; bottom: 8px; z-index:5; width: 8vw; }
 /*.favicon2 a { color: #000; font-size: 15px; font-weight: 600; line-height: 30px; }*/
 .favicon2 a i {color:#000; font-size:24px; display:flex; justify-content: center; align-items: center;font-weight: 600; }*/
 
@@ -2320,28 +2322,31 @@ a#linkOncekiSayfa { display: none !important; cursor: pointer; }
 
     #ticimaxCopyright { display: inline-block; margin: 0 !important; line-height: 45px !important; padding-bottom:40px }
 
-    #ferhat2 {display:block; width:100%; background:#fff; position:fixed; top:0; margin:0; padding:0; height:65px; z-index:4;}
+    #ferhat2 {display:block; width:100%; background:linear-gradient(90deg, #fff, #fff,#fff,#fff /*#ec95a3*/); position:fixed; top:0; margin:0; padding:0; height:65px; z-index:4;}
 
     #header {background:#fff /*#3b3b3b*/; position: relative; height: 65px; border-bottom: /*1px solid #d9d9d9*/; width: 100%; border-top: none; }
 
-    #ferhat {display:block; width:100%; background:#fff; position:fixed; bottom:0; z-index:4; margin:0; padding:0; height:40px}
+    #ferhat {display:block; width:100%; background:linear-gradient( #fff,#fff /*#ec95a3*/); position:fixed; bottom:0; z-index:4; margin:0; padding:0; height:40px}
     
     #header #logo { width: 40%; margin: 0 auto !important; display: table !important; text-align: center; float: none; padding: 0; }
 
-    #header #logo a { display: table-cell; vertical-align: middle; text-align: center !important; height: 65px; margin: 0 auto;}
+    #header #logo p { display: table-cell; vertical-align: middle; text-align: center !important; height: 65px; margin: 0 auto;}
 
-    #header #logo img {z-index:5; position:fixed; top:5px; left:40vw; max-width: 100%; max-height: 60px; display: inline;}
+    #header #logo img {z-index:5; position:fixed; top:12px; left:22.5vw; max-width: 55vw; max-height: 60px; margin:0; padding:0; background: transparent; background-color: transparent;}
 
     /*Ferhat*/
 
-    .MobilUserBtn { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:8vw; position: fixed; right: 10vw; bottom: 8px; z-index:5; }
+    .MobilMenuBtn { position: fixed; left: 15px; top: 20px; z-index:5 }
+    
+    .MobilUserBtn { position: fixed; right: 15px; top: 20px; z-index:5 }  
+    
+    .homeButton { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:10vw; position: fixed; left: 12vw; bottom: 9px; z-index:5;}
 
-    .MobilCartBtn { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:8vw; position: fixed; right: 28vw; bottom: 8px; z-index:5; }
+    .MobilSearchBtn { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:10vw; position: fixed; left: 34vw; bottom: 9px; z-index:5;}
 
-    .MobilSearchBtn { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:8vw; position: fixed; left: 28vw; bottom: 8px; z-index:5;}
-    .homeButton { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:8vw; position: fixed; left: 10vw; bottom: 8px; z-index:5;}
-
-    .MobilMenuBtn { position: fixed; left: 8px; top: 16px; z-index:5 }
+    .favicon2 { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width: 10vw; position: fixed; right: 34vw; bottom: 9px; z-index:5;}    
+    
+    .MobilCartBtn { display:flex; align-items:center; justify-content:center; padding:0; margin:0; width:10vw; position: fixed; right: 12vw; bottom: 9px; z-index:5; }
     
     /*original code
     .MobilUserBtn { position: absolute; right: 48px; top: 16px; }
